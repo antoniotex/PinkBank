@@ -24,6 +24,8 @@ namespace PingBank
 
             Console.WriteLine(gabriela.nome);
             Console.WriteLine(conta.titular.nome);
+
+            Console.ReadLine();
         }
     }
 }
