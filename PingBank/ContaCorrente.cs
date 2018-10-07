@@ -2,50 +2,75 @@
 {
     public class ContaCorrente
     {
+        public Cliente Titular { get; set; }
 
-        public Cliente titular;
-        public int agencia;
-        public int numero;
-        private double saldo;
+        public static int TotalDeContasCriadas { get; private set; }
 
-        public void DefinirSaldo(double valor)
-        {
-            if(valor < 0)
+        private int _agencia { get; set; }
+        public int Agencia {
+            get
             {
-                return;
+                return _agencia;
             }
-            saldo = valor;
+            set
+            {
+                if(value <= 0)
+                {
+                    _agencia = value;
+                }
+            }
+        }
+        public int Numero { get; set; }
+        private double _saldo;
+
+        public double Saldo
+        {
+            get
+            {
+                return _saldo;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    return;
+                }
+                _saldo = value;
+            }
         }
 
-        public double ObterSaldo()
+        public ContaCorrente(int agencia, int numero)
         {
-            return saldo;
+            Agencia = agencia;
+            Numero = numero;
+
+            TotalDeContasCriadas++;
         }
 
         public bool Sacar(double valor)
         {
-            if (saldo < valor)
+            if (_saldo < valor)
             {
                 return false;
             }
 
-            saldo -= valor;
+            _saldo -= valor;
             return true;
         }
 
         public void Depositar(double valor)
         {
-            this.saldo += valor;
+            this._saldo += valor;
         }
 
         public bool Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (saldo < valor)
+            if (_saldo < valor)
             {
                 return false;
             }
 
-            saldo -= valor;
+            _saldo -= valor;
             contaDestino.Depositar(valor);
             return true;
         }
