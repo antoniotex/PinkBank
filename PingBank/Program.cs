@@ -10,20 +10,17 @@ namespace PingBank
     {
         static void Main(string[] args)
         {
-            // Cliente gabriela = new Cliente();
-            // gabriela.nome = "Gabriela";
-            // gabriela.profissao = "Dev C#";
-            // gabriela.cpf = "15036981731";
-
             ContaCorrente conta = new ContaCorrente();
 
-            // conta.titular = gabriela;
-            conta.saldo = 500;
-            conta.agencia = 563;
-            conta.numero = 563452;
+            //conta.saldo = -10;
 
-            // Console.WriteLine(gabriela.nome);
-            Console.WriteLine(conta.titular.nome);
+            conta.DefinirSaldo(1000);
+
+            conta.Sacar(800);
+
+            conta.Depositar(120);
+
+            Console.WriteLine("Saldo em conta: " + conta.ObterSaldo());
 
             Console.ReadLine();
         }
