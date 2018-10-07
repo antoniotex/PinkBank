@@ -10,13 +10,12 @@ namespace _04_PingBank
         {
             ContaCorrente contadoBruno = new ContaCorrente();
 
-            contadoBruno.titular = "Bruno";
-
-            Console.WriteLine("Saldo anterior: " + contadoBruno.saldo);
-
-            contadoBruno.Sacar(75);
 
             Console.WriteLine("Saldo atual: " + contadoBruno.saldo);
+
+            contadoBruno.Depositar(500);
+
+            Console.WriteLine("Saldo anterior: " + contadoBruno.saldo);
 
             Console.ReadLine();
 

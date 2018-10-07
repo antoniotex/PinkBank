@@ -16,4 +16,9 @@
         return true;
     }
 
+    public void Depositar(double valor)
+    {
+        this.saldo += valor;
+    }
+
 }
