@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace PingBank
 {
-    class Program
+    public class Cliente
     {
-        static void Main(string[] args)
-        {
-            Cliente gabriela = new Cliente();
-        }
+        public string nome;
+        public string cpf;
+        public string profissao;
     }
 }
