@@ -6,16 +6,30 @@
         public Cliente titular;
         public int agencia;
         public int numero;
-        public double saldo = 100;
+        private double saldo;
+
+        public void DefinirSaldo(double valor)
+        {
+            if(valor < 0)
+            {
+                return;
+            }
+            saldo = valor;
+        }
+
+        public double ObterSaldo()
+        {
+            return saldo;
+        }
 
         public bool Sacar(double valor)
         {
-            if (this.saldo < valor)
+            if (saldo < valor)
             {
                 return false;
             }
 
-            this.saldo -= valor;
+            saldo -= valor;
             return true;
         }
 
@@ -26,12 +40,12 @@
 
         public bool Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (this.saldo < valor)
+            if (saldo < valor)
             {
                 return false;
             }
 
-            this.saldo -= valor;
+            saldo -= valor;
             contaDestino.Depositar(valor);
             return true;
         }
