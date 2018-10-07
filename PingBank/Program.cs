@@ -10,6 +10,8 @@ namespace PingBank
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Total contas criadas: " + ContaCorrente.TotalDeContasCriadas);
+
             ContaCorrente conta = new ContaCorrente(867, 867452);
             Cliente cliente = new Cliente();
 
@@ -20,6 +22,8 @@ namespace PingBank
             conta.Depositar(120);
 
             Console.WriteLine("Saldo em conta: " + conta.Saldo);
+
+            Console.WriteLine("Total contas criadas: " + ContaCorrente.TotalDeContasCriadas);
 
             Console.ReadLine();
         }
