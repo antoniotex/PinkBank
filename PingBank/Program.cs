@@ -11,8 +11,7 @@ namespace PingBank
         static void Main(string[] args)
         {
             ContaCorrente conta = new ContaCorrente();
-
-            //conta.saldo = -10;
+            Cliente cliente = new Cliente();
 
             conta.Saldo = 1000;
 
