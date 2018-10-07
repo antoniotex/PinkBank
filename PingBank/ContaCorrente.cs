@@ -24,6 +24,12 @@
             }
         }
 
+        public ContaCorrente(int agencia, int numero)
+        {
+            Agencia = agencia;
+            Numero = numero;
+        }
+
         public bool Sacar(double valor)
         {
             if (_saldo < valor)
