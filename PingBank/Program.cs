@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PingBank.Funcionarios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,20 +11,18 @@ namespace PingBank
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Total contas criadas: " + ContaCorrente.TotalDeContasCriadas);
+            Funcionario carlos = new Funcionario();
+            carlos.Nome = "Carlos";
+            carlos.CPF = "15036981731";
+            carlos.Salario = 2000;
 
-            ContaCorrente conta = new ContaCorrente(867, 867452);
-            Cliente cliente = new Cliente();
+            Diretor roberto = new Diretor();
+            roberto.Nome = "Roberto";
+            roberto.CPF = "524856357";
+            roberto.Salario = 5000;
 
-            conta.Saldo = 1000;
-
-            conta.Sacar(700);
-
-            conta.Depositar(120);
-
-            Console.WriteLine("Saldo em conta: " + conta.Saldo);
-
-            Console.WriteLine("Total contas criadas: " + ContaCorrente.TotalDeContasCriadas);
+            Console.WriteLine(carlos.GetBonificacao());
+            Console.WriteLine(roberto.GetBonificacao());
 
             Console.ReadLine();
         }
