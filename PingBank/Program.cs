@@ -11,18 +11,11 @@ namespace PingBank
     {
         static void Main(string[] args)
         {
-            Funcionario carlos = new Funcionario();
-            carlos.Nome = "Carlos";
-            carlos.CPF = "15036981731";
-            carlos.Salario = 2000;
+            ContaCorrente conta1 = new ContaCorrente(846, 846387);
+            ContaCorrente conta2 = new ContaCorrente(846, 846388);
+            ContaCorrente conta3 = new ContaCorrente(846, 846389);
 
-            Diretor roberto = new Diretor();
-            roberto.Nome = "Roberto";
-            roberto.CPF = "524856357";
-            roberto.Salario = 5000;
-
-            Console.WriteLine(carlos.GetBonificacao());
-            Console.WriteLine(roberto.GetBonificacao());
+            Console.WriteLine(ContaCorrente.TaxaOperacao);
 
             Console.ReadLine();
         }
