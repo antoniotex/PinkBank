@@ -11,11 +11,20 @@ namespace PingBank
     {
         static void Main(string[] args)
         {
-            ContaCorrente conta1 = new ContaCorrente(846, 846387);
-            ContaCorrente conta2 = new ContaCorrente(846, 846388);
-            ContaCorrente conta3 = new ContaCorrente(846, 846389);
+            try
+            {
+                ContaCorrente conta1 = new ContaCorrente(0, 0);
 
-            Console.WriteLine(ContaCorrente.TaxaOperacao);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine("argumentException type");
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }            
 
             Console.ReadLine();
         }

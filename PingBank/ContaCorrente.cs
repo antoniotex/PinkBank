@@ -1,4 +1,6 @@
-﻿namespace PingBank
+﻿using System;
+
+namespace PingBank
 {
     public class ContaCorrente
     {
@@ -34,6 +36,14 @@
         {
             if(agencia <= 0 || numero <= 0)
             {
+
+                //nameof() é um operador do CSharp que transforma em string o nome da variavel (Boa prática)
+                ArgumentException excecao = new ArgumentException("A ag e numero devem ser maiores que zero", nameof(numero));
+
+                throw excecao;
+
+                //throw new Exception("A ag e numero devem ser maiores que zero");
+                //Console.WriteLine(Titular.Nome);
                 //Lançando uma excessão
             }
 
