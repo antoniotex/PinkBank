@@ -8,22 +8,11 @@
 
         public static int TotalDeContasCriadas { get; private set; }
 
-        private int _agencia { get; set; }
-        public int Agencia {
-            get
-            {
-                return _agencia;
-            }
-            set
-            {
-                if(value <= 0)
-                {
-                    _agencia = value;
-                }
-            }
-        }
-        public int Numero { get; set; }
-        private double _saldo;
+        public int Agencia { get; }
+   
+        public int Numero { get; }
+
+        private double _saldo = 100;
 
         public double Saldo
         {
@@ -43,6 +32,11 @@
 
         public ContaCorrente(int agencia, int numero)
         {
+            if(agencia <= 0 || numero <= 0)
+            {
+                //Lançando uma excessão
+            }
+
             Agencia = agencia;
             Numero = numero;
 
