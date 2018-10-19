@@ -13,8 +13,12 @@ namespace PingBank
         {
             try
             {
-                ContaCorrente conta1 = new ContaCorrente(0, 0);
+                ContaCorrente conta1 = new ContaCorrente(456, 456817);
 
+                conta1.Depositar(50);
+                Console.WriteLine(conta1.Saldo);
+                conta1.Sacar(500);
+                Console.WriteLine(conta1.Saldo);
             }
             catch (ArgumentException ex)
             {

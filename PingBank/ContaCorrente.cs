@@ -38,6 +38,7 @@ namespace PingBank
             {
 
                 //nameof() é um operador do CSharp que transforma em string o nome da variavel (Boa prática)
+                //Dessa forma abaixo estou passando como argumento a Message e o ParamName
                 ArgumentException excecao = new ArgumentException("A ag e numero devem ser maiores que zero", nameof(numero));
 
                 throw excecao;
@@ -55,15 +56,14 @@ namespace PingBank
             TaxaOperacao = 30 / TotalDeContasCriadas;
         }
 
-        public bool Sacar(double valor)
+        public void Sacar(double valor)
         {
             if (_saldo < valor)
             {
-                return false;
+                
             }
 
             _saldo -= valor;
-            return true;
         }
 
         public void Depositar(double valor)
