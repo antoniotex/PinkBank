@@ -1,0 +1,7 @@
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank\bin\Debug\PingBank.exe.config
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank\bin\Debug\PingBank.exe
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank\bin\Debug\PingBank.pdb
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank\obj\Debug\PingBank.csprojAssemblyReference.cache
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank\obj\Debug\PingBank.csproj.CoreCompileInputs.cache
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank\obj\Debug\PingBank.exe
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank\obj\Debug\PingBank.pdb

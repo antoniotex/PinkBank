@@ -1,7 +1,0 @@
-C:\Users\tx\source\repos\PingBank\04-PingBank\obj\Debug\04-PingBank.csprojAssemblyReference.cache
-C:\Users\tx\source\repos\PingBank\04-PingBank\obj\Debug\04-PingBank.csproj.CoreCompileInputs.cache
-C:\Users\tx\source\repos\PingBank\04-PingBank\bin\Debug\04-PingBank.exe.config
-C:\Users\tx\source\repos\PingBank\04-PingBank\bin\Debug\04-PingBank.exe
-C:\Users\tx\source\repos\PingBank\04-PingBank\bin\Debug\04-PingBank.pdb
-C:\Users\tx\source\repos\PingBank\04-PingBank\obj\Debug\04-PingBank.exe
-C:\Users\tx\source\repos\PingBank\04-PingBank\obj\Debug\04-PingBank.pdb
