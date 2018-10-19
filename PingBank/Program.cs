@@ -25,6 +25,10 @@ namespace PingBank
                 Console.WriteLine("argumentException type");
                 Console.WriteLine(ex.Message);
             }
+            catch (SaldoInsuficienteException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
