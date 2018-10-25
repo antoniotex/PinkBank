@@ -58,9 +58,9 @@ namespace PingBank
 
         public void Sacar(double valor)
         {
-            if (valor < 0)
+            if(valor < 0)
             {
-                throw new ArgumentException("Valor invalido para o saque" + nameof(valor));
+                throw new ArgumentException("Valor invalido para o saque", nameof(valor));
             }
 
             if (_saldo < valor)

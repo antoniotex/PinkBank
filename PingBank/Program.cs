@@ -15,24 +15,22 @@ namespace PingBank
             {
                 ContaCorrente conta1 = new ContaCorrente(456, 456817);
 
-                conta1.Depositar(50);
-                Console.WriteLine(conta1.Saldo);
-                conta1.Sacar(500);
-                Console.WriteLine(conta1.Saldo);
-            }
-            catch (ArgumentException ex)
+            try
             {
-                Console.WriteLine("argumentException type");
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("log1: " + conta1.Saldo);
+                conta1.Depositar(100);
+                Console.WriteLine("log2: " + conta1.Saldo);
+                conta1.Sacar(-150);
+                Console.WriteLine("log3: " + conta1.Saldo);
             }
-            catch (SaldoInsuficienteException ex)
+            catch(ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            catch (Exception ex)
+            catch(SaldoInsuficienteException ex)
             {
                 Console.WriteLine(ex.Message);
-            }            
+            }
 
             Console.ReadLine();
         }
