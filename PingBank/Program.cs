@@ -14,20 +14,11 @@ namespace PingBank
             try
             {
                 ContaCorrente conta1 = new ContaCorrente(456, 456817);
+                ContaCorrente conta2 = new ContaCorrente(455, 456815);
 
-            try
-            {
-                Console.WriteLine("log1: " + conta1.Saldo);
-                conta1.Depositar(100);
-                Console.WriteLine("log2: " + conta1.Saldo);
-                conta1.Sacar(-150);
-                Console.WriteLine("log3: " + conta1.Saldo);
+                conta1.Transferir(1000, conta2);
             }
-            catch(ArgumentException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            catch(SaldoInsuficienteException ex)
+            catch(OperacaoFinanceiraException ex)
             {
                 Console.WriteLine(ex.Message);
             }

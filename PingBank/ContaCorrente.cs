@@ -6,6 +6,9 @@ namespace PingBank
     {
         public Cliente Titular { get; set; }
 
+        public int ContadorSaquesNaoPermitidos { get; private set; }
+        public int ContadorTransferenciasNaoPermitidas { get; private set; }
+
         public static double TaxaOperacao { get; private set; }
 
         public static int TotalDeContasCriadas { get; private set; }
@@ -65,6 +68,7 @@ namespace PingBank
 
             if (_saldo < valor)
             {
+                ContadorSaquesNaoPermitidos++;
                 throw new SaldoInsuficienteException(Saldo, valor);
             }
 
@@ -82,10 +86,16 @@ namespace PingBank
             {
                 throw new ArgumentException("Valor invalido para a transferencia" + nameof(valor));
             }
-
-            Sacar(valor);
-            contaDestino.Depositar(valor);
-            
+            try
+            {
+                Sacar(valor);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                ContadorTransferenciasNaoPermitidas++;
+                throw new OperacaoFinanceiraException("Operação não realizada", ex);
+            }
+            contaDestino.Depositar(valor);            
         }
 
     }
