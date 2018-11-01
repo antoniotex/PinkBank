@@ -1,0 +1,10 @@
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\bin\Debug\PingBank.SistemaAgencia.exe.config
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\bin\Debug\PingBank.SistemaAgencia.exe
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\bin\Debug\PingBank.SistemaAgencia.pdb
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\obj\Debug\PingBank.SistemaAgencia.csprojAssemblyReference.cache
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\obj\Debug\PingBank.SistemaAgencia.csproj.CoreCompileInputs.cache
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\obj\Debug\PingBank.SistemaAgencia.exe
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\obj\Debug\PingBank.SistemaAgencia.pdb
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\bin\Debug\PingBank.Modelos.dll
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\bin\Debug\PingBank.Modelos.pdb
+C:\Users\tx\source\repos\PingBank\PingBank.SistemaAgencia\obj\Debug\PingBank.SistemaAgencia.csproj.CopyComplete

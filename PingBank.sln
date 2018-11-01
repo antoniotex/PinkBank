@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingBank", "PingBank\PingBank.csproj", "{7B736053-6368-4D4A-8D1D-BFEDCC79A5F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingBank.SistemaAgencia", "PingBank.SistemaAgencia\PingBank.SistemaAgencia.csproj", "{0B0E3A7E-A528-4923-A2EA-BF1A1E7B4FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingBank.Modelos", "PingBank.Modelos\PingBank.Modelos.csproj", "{2F37CB05-7E4E-4ADA-87CF-83744ADE9034}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +13,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B736053-6368-4D4A-8D1D-BFEDCC79A5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B736053-6368-4D4A-8D1D-BFEDCC79A5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B736053-6368-4D4A-8D1D-BFEDCC79A5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B736053-6368-4D4A-8D1D-BFEDCC79A5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B0E3A7E-A528-4923-A2EA-BF1A1E7B4FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B0E3A7E-A528-4923-A2EA-BF1A1E7B4FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B0E3A7E-A528-4923-A2EA-BF1A1E7B4FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B0E3A7E-A528-4923-A2EA-BF1A1E7B4FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F37CB05-7E4E-4ADA-87CF-83744ADE9034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F37CB05-7E4E-4ADA-87CF-83744ADE9034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F37CB05-7E4E-4ADA-87CF-83744ADE9034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F37CB05-7E4E-4ADA-87CF-83744ADE9034}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B2A070EC-A238-441A-A5E3-BE7422CEDF2F}
+		SolutionGuid = {8EF0DDD5-CBEE-43EE-9AE9-D70E1829B018}
 	EndGlobalSection
 EndGlobal
