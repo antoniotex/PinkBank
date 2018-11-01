@@ -9,3 +9,10 @@ C:\Users\tx\source\repos\PingBank\PingBank.Modelos\bin\Debug\PingBank.SistemaAge
 C:\Users\tx\source\repos\PingBank\PingBank.Modelos\bin\Debug\PingBank.SistemaAgencia.exe.config
 C:\Users\tx\source\repos\PingBank\PingBank.Modelos\obj\Debug\PingBank.Modelos.csproj.CopyComplete
 C:\Users\tx\source\repos\PingBank\PingBank.Modelos\bin\Debug\PingBank.Modelos.xml
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank.Modelos\obj\Debug\PingBank.Modelos.csprojAssemblyReference.cache
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank.Modelos\obj\Debug\PingBank.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank.Modelos\obj\Debug\PingBank.Modelos.dll
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank.Modelos\obj\Debug\PingBank.Modelos.pdb
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank.Modelos\bin\Debug\PingBank.Modelos.xml
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank.Modelos\bin\Debug\PingBank.Modelos.dll
+C:\Users\tx\source\repos\antoniotex\PinkBank\PingBank.Modelos\bin\Debug\PingBank.Modelos.pdb

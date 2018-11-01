@@ -58,11 +58,5 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaldoInsuficienteException.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PingBank.SistemaAgencia\PingBank.SistemaAgencia.csproj">
-      <Project>{0b0e3a7e-a528-4923-a2ea-bf1a1e7b4fca}</Project>
-      <Name>PingBank.SistemaAgencia</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
